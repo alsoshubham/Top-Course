@@ -5,7 +5,7 @@ const Cards = ({ course }) => {
   console.log("Course", course);
 
   // Check if course is valid and an object
-  if (!course || typeof course !== 'object' || Array.isArray(course)) {
+  if (!course || typeof course !== "object" || Array.isArray(course)) {
     return <h1>No courses</h1>;
   }
 
