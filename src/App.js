@@ -44,15 +44,20 @@ const App = () => {
   }
 
   return (
-    <div className="min-h-screen felx flex-col">
+    <div className="min-h-screen flex flex-col">
       <div>
         <Navbar />
       </div>
-      <div>
-        <Filter filterData={filterData} />
-      </div>
-      <div className="w-11/12 max-w-[1200px] mx-auto flex flex-wrap justify-center items-center min-h-[50vh]">
-        <Cards course={course} />
+      <div className="bg-bgDark2">
+        <div>
+          <Filter filterData={filterData} />
+        </div>
+        <div
+          className="w-11/12 max-w-[1200px] mx-auto flex flex-wrap
+       justify-center items-center min-h-[50vh]"
+        >
+          <Cards course={course} />
+        </div>
       </div>
     </div>
   );
